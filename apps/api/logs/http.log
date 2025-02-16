@@ -1,0 +1,193 @@
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T10:45:36.386Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T10:45:36.406Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T10:45:36.407Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T10:45:36.407Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T10:45:36.408Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T10:45:36.409Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T10:45:36.650Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T10:45:36.654Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T10:45:36.657Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T10:45:46.306Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T10:45:46.322Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T10:45:46.323Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T10:45:46.324Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T10:45:46.324Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T10:45:46.325Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T10:45:46.540Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T10:45:46.544Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T10:45:46.547Z"}
+{"body":{},"context":"ExceptionsHandler","level":"error","message":"Cannot GET /","method":"GET","params":{},"path":"/","query":{},"stack":"NotFoundException: Cannot GET /\n    at callback (/home/Julio/dev/turbo-dev/node_modules/.pnpm/@nestjs+core@10.4.15_@nestjs+common@10.4.15_class-transformer@0.5.1_class-validator@0.14.1_re_ilhxcld7a72vuoqnfqd7fueu7a/node_modules/@nestjs/core/router/routes-resolver.js:77:19)\n    at /home/Julio/dev/turbo-dev/node_modules/.pnpm/@nestjs+core@10.4.15_@nestjs+common@10.4.15_class-transformer@0.5.1_class-validator@0.14.1_re_ilhxcld7a72vuoqnfqd7fueu7a/node_modules/@nestjs/core/router/router-proxy.js:9:23\n    at Layer.handle [as handle_request] (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:328:13)\n    at /home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:280:10)\n    at urlencodedParser (/home/Julio/dev/turbo-dev/node_modules/.pnpm/body-parser@1.20.3/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n    at Layer.handle [as handle_request] (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:328:13)","statusCode":404,"timestamp":"2025-02-16T10:46:08.749Z"}
+{"body":{},"context":"ExceptionsHandler","level":"error","message":"Cannot GET /favicon.ico","method":"GET","params":{},"path":"/favicon.ico","query":{},"stack":"NotFoundException: Cannot GET /favicon.ico\n    at callback (/home/Julio/dev/turbo-dev/node_modules/.pnpm/@nestjs+core@10.4.15_@nestjs+common@10.4.15_class-transformer@0.5.1_class-validator@0.14.1_re_ilhxcld7a72vuoqnfqd7fueu7a/node_modules/@nestjs/core/router/routes-resolver.js:77:19)\n    at /home/Julio/dev/turbo-dev/node_modules/.pnpm/@nestjs+core@10.4.15_@nestjs+common@10.4.15_class-transformer@0.5.1_class-validator@0.14.1_re_ilhxcld7a72vuoqnfqd7fueu7a/node_modules/@nestjs/core/router/router-proxy.js:9:23\n    at Layer.handle [as handle_request] (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:328:13)\n    at /home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:280:10)\n    at urlencodedParser (/home/Julio/dev/turbo-dev/node_modules/.pnpm/body-parser@1.20.3/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n    at Layer.handle [as handle_request] (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:328:13)","statusCode":404,"timestamp":"2025-02-16T10:46:08.799Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T10:47:24.472Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T10:47:24.490Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T10:47:24.491Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T10:47:24.492Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T10:47:24.492Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T10:47:24.493Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T10:47:24.698Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T10:47:24.702Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T10:47:24.706Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T10:48:17.877Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T10:48:17.893Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T10:48:17.894Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T10:48:17.895Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T10:48:17.895Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T10:48:17.896Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T10:48:18.149Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T10:48:18.154Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T10:48:18.158Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T10:48:19.205Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T10:48:19.222Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T10:48:19.223Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T10:48:19.224Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T10:48:19.224Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T10:48:19.225Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T10:48:19.453Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T10:48:19.457Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T10:48:19.461Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T10:48:22.523Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T10:48:22.545Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T10:48:22.546Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T10:48:22.547Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T10:48:22.548Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T10:48:22.549Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T10:48:22.822Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T10:48:22.827Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T10:48:22.831Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T10:48:28.407Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T10:48:28.424Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T10:48:28.425Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T10:48:28.425Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T10:48:28.426Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T10:48:28.427Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T10:48:28.652Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T10:48:28.656Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T10:48:28.659Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T11:04:15.021Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T11:04:15.041Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T11:04:15.042Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T11:04:15.042Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T11:04:15.043Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-16T11:04:15.043Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T11:04:15.044Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T11:04:15.254Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T11:04:15.258Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-16T11:04:15.259Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-16T11:04:15.260Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T11:04:15.263Z"}
+{"body":{},"context":"ExceptionsHandler","level":"error","message":"Cannot GET /users","method":"GET","params":{},"path":"/users","query":{},"stack":"NotFoundException: Cannot GET /users\n    at callback (/home/Julio/dev/turbo-dev/node_modules/.pnpm/@nestjs+core@10.4.15_@nestjs+common@10.4.15_class-transformer@0.5.1_class-validator@0.14.1_re_ilhxcld7a72vuoqnfqd7fueu7a/node_modules/@nestjs/core/router/routes-resolver.js:77:19)\n    at /home/Julio/dev/turbo-dev/node_modules/.pnpm/@nestjs+core@10.4.15_@nestjs+common@10.4.15_class-transformer@0.5.1_class-validator@0.14.1_re_ilhxcld7a72vuoqnfqd7fueu7a/node_modules/@nestjs/core/router/router-proxy.js:9:23\n    at Layer.handle [as handle_request] (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:328:13)\n    at /home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:280:10)\n    at urlencodedParser (/home/Julio/dev/turbo-dev/node_modules/.pnpm/body-parser@1.20.3/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n    at Layer.handle [as handle_request] (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:328:13)","statusCode":404,"timestamp":"2025-02-16T11:04:45.076Z"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:06:46.452Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:06:46.452Z"}
+{"context":"HTTP","ip":"::1","level":"info","method":"GET","responseTime":"180ms","statusCode":200,"timestamp":"2025-02-16T11:06:46.631Z","url":"/api/users","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0"}
+{"body":{},"context":"ExceptionsHandler","level":"error","message":"Cannot GET /favicon.ico","method":"GET","params":{},"path":"/favicon.ico","query":{},"stack":"NotFoundException: Cannot GET /favicon.ico\n    at callback (/home/Julio/dev/turbo-dev/node_modules/.pnpm/@nestjs+core@10.4.15_@nestjs+common@10.4.15_class-transformer@0.5.1_class-validator@0.14.1_re_ilhxcld7a72vuoqnfqd7fueu7a/node_modules/@nestjs/core/router/routes-resolver.js:77:19)\n    at /home/Julio/dev/turbo-dev/node_modules/.pnpm/@nestjs+core@10.4.15_@nestjs+common@10.4.15_class-transformer@0.5.1_class-validator@0.14.1_re_ilhxcld7a72vuoqnfqd7fueu7a/node_modules/@nestjs/core/router/router-proxy.js:9:23\n    at Layer.handle [as handle_request] (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:328:13)\n    at /home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:280:10)\n    at urlencodedParser (/home/Julio/dev/turbo-dev/node_modules/.pnpm/body-parser@1.20.3/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n    at Layer.handle [as handle_request] (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/Julio/dev/turbo-dev/node_modules/.pnpm/express@4.21.2/node_modules/express/lib/router/index.js:328:13)","statusCode":404,"timestamp":"2025-02-16T11:06:46.678Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T11:08:44.003Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T11:08:44.023Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T11:08:44.024Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T11:08:44.025Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T11:08:44.025Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-16T11:08:44.026Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T11:08:44.026Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T11:08:44.278Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T11:08:44.283Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-16T11:08:44.283Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-16T11:08:44.284Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T11:08:44.288Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T11:09:06.986Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T11:09:07.002Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T11:09:07.003Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T11:09:07.004Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T11:09:07.004Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-16T11:09:07.005Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T11:09:07.005Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T11:09:07.227Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T11:09:07.231Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-16T11:09:07.231Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-16T11:09:07.232Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T11:09:07.235Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T11:10:09.143Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T11:10:09.162Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T11:10:09.163Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T11:10:09.164Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T11:10:09.165Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-16T11:10:09.166Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T11:10:09.167Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T11:10:09.452Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T11:10:09.456Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-16T11:10:09.457Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-16T11:10:09.458Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T11:10:09.461Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T11:12:02.548Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T11:12:02.567Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T11:12:02.568Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T11:12:02.568Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T11:12:02.569Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-16T11:12:02.570Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T11:12:02.570Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T11:12:02.841Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T11:12:02.846Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-16T11:12:02.847Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-16T11:12:02.848Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T11:12:02.852Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T11:16:18.360Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T11:16:18.384Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T11:16:18.385Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T11:16:18.386Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T11:16:18.386Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-16T11:16:18.387Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T11:16:18.387Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T11:16:18.624Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T11:16:18.628Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-16T11:16:18.629Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-16T11:16:18.630Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T11:16:18.633Z"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:16:51.174Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:16:51.175Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"168ms","statusCode":200,"timestamp":"2025-02-16T11:16:51.342Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:18:40.115Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:18:40.116Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"60ms","statusCode":200,"timestamp":"2025-02-16T11:18:40.174Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:19:49.122Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:19:49.122Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"73ms","statusCode":200,"timestamp":"2025-02-16T11:19:49.193Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:20:55.584Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:20:55.584Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"63ms","statusCode":200,"timestamp":"2025-02-16T11:20:55.647Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:23:19.390Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:23:19.390Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"125ms","statusCode":200,"timestamp":"2025-02-16T11:23:19.515Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:24:22.124Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:24:22.124Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"67ms","statusCode":200,"timestamp":"2025-02-16T11:24:22.191Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:25:55.792Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:25:55.792Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"68ms","statusCode":200,"timestamp":"2025-02-16T11:25:55.860Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:29:27.806Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:29:27.806Z"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:29:27.811Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:29:27.812Z"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:29:27.905Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:29:27.905Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"141ms","statusCode":200,"timestamp":"2025-02-16T11:29:27.946Z","url":"/api/users","userAgent":"node"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"153ms","statusCode":200,"timestamp":"2025-02-16T11:29:27.965Z","url":"/api/users","userAgent":"node"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"109ms","statusCode":200,"timestamp":"2025-02-16T11:29:28.013Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:29:37.283Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:29:37.283Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"47ms","statusCode":200,"timestamp":"2025-02-16T11:29:37.330Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:29:52.225Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:29:52.226Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"58ms","statusCode":200,"timestamp":"2025-02-16T11:29:52.283Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T11:35:57.685Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T11:35:57.685Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"137ms","statusCode":200,"timestamp":"2025-02-16T11:35:57.822Z","url":"/api/users","userAgent":"node"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T11:39:27.899Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T11:39:27.916Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T11:39:27.917Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T11:39:27.918Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T11:39:27.918Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-16T11:39:27.919Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T11:39:27.920Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/api}:","timestamp":"2025-02-16T11:39:28.379Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api, GET} route","timestamp":"2025-02-16T11:39:28.383Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-16T11:39:28.384Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-16T11:39:28.385Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T11:39:28.390Z"}
