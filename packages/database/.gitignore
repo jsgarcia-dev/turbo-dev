@@ -10,7 +10,8 @@ dist
 .env.production.local
 
 # prisma
-generated
+.prisma
+node_modules/.prisma
 
 # typescript
 *.tsbuildinfo

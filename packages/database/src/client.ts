@@ -1,6 +1,6 @@
 /// <reference types="node" />
 
-import { PrismaClient } from "../generated/client";
+import { PrismaClient } from "@prisma/client";
 
 declare global {
   var prisma: PrismaClient | undefined;

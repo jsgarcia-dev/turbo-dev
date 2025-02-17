@@ -2,8 +2,13 @@ import { prisma } from "@repo/database";
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import { nextCookies } from "better-auth/next-js";
+import { bearer, jwt, openAPI } from "better-auth/plugins";
 
 export const auth = betterAuth({
+  baseURL: process.env.NEXT_PUBLIC_URL,
+  logger: {
+    level: "debug",
+  },
   database: prismaAdapter(prisma, {
     provider: "postgresql",
   }),
@@ -27,5 +32,22 @@ export const auth = betterAuth({
       },
     },
   },
-  plugins: [nextCookies()],
+  plugins: [
+    jwt({
+      jwks: {
+        keyPairConfig: {
+          alg: "EdDSA",
+          crv: "Ed25519",
+        },
+      },
+      jwt: {
+        expirationTime: "7d",
+        issuer: process.env.NEXT_PUBLIC_URL,
+        audience: process.env.NEXT_PUBLIC_URL,
+      },
+    }),
+    bearer(),
+    nextCookies(),
+    openAPI(),
+  ],
 });

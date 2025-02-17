@@ -67,7 +67,7 @@ export async function SignupAuth(prevState: SignupState, formData: FormData) {
 
       return {
         success: "Conta criada com sucesso!",
-        redirect: "/",
+        redirect: "/auth/sign-in",
       };
     } catch (signupError) {
       console.error("Erro ao criar usuário:", signupError);
