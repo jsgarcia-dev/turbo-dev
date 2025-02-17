@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useActionState } from "react";
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import { Eye, EyeOff, Lock, Mail } from "lucide-react";
+import { Lock, Mail, User } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -19,17 +19,22 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-import { SigninAuth } from "@/app/_actions/auth/signin-actions";
+import { cn } from "@/lib/utils";
+
+import { SignupAuth } from "@/app/_actions/auth/signup-actions";
 
 import MyLogo from "../icons/my-logo";
+import { Separator } from "../ui/separator";
 import FormError from "./form-error";
 import FormSuccess from "./form-success";
 import { Social } from "./social";
 
-export function SignInForm() {
-  const [showPassword, setShowPassword] = useState(false);
+export function SignUpForm({
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<"div">) {
   const router = useRouter();
-  const [formState, formAction, isPending] = useActionState(SigninAuth, null);
+  const [formState, formAction, isPending] = useActionState(SignupAuth, null);
 
   useEffect(() => {
     if (formState?.success && formState?.redirect) {
@@ -43,18 +48,32 @@ export function SignInForm() {
   }, [formState, router]);
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card className="w-[450px]">
         <CardHeader className="items-center justify-center">
           <MyLogo className="h-12 w-12" />
-          <CardTitle className="text-2xl">Bem-vindo de volta</CardTitle>
+          <CardTitle className="text-2xl">Create an Account</CardTitle>
           <CardDescription>
-            Digite seu email e senha para entrar na sua conta
+            Enter your details below to create your account
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form action={formAction}>
             <div className="mt-4 flex flex-col gap-6">
+              <div className="grid gap-2">
+                <Label htmlFor="name">Name</Label>
+                <div className="relative">
+                  <User className="text-muted-foreground absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
+                  <Input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="John Doe"
+                    required
+                    className="pl-10"
+                  />
+                </div>
+              </div>
               <div className="grid gap-2">
                 <Label htmlFor="email">Email</Label>
                 <div className="relative">
@@ -70,37 +89,17 @@ export function SignInForm() {
                 </div>
               </div>
               <div className="grid gap-2">
-                <div className="flex items-center justify-between">
-                  <Label htmlFor="password">Senha</Label>
-                  <Link
-                    href="/auth/forgot-password"
-                    className="text-muted-foreground hover:text-primary text-sm underline-offset-4 hover:underline"
-                  >
-                    Esqueceu sua senha?
-                  </Link>
-                </div>
+                <Label htmlFor="password">Password</Label>
                 <div className="relative">
                   <Lock className="text-muted-foreground absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
                   <Input
                     id="password"
                     name="password"
-                    type={showPassword ? "text" : "password"}
+                    type="password"
                     required
                     className="pl-10"
                     placeholder="********"
                   />
-                  <Button
-                    type="button"
-                    variant="ghost"
-                    className="absolute top-0 right-0 h-full px-3 py-2 hover:bg-transparent"
-                    onClick={() => setShowPassword(!showPassword)}
-                  >
-                    {showPassword ? (
-                      <EyeOff className="text-muted-foreground h-4 w-4" />
-                    ) : (
-                      <Eye className="text-muted-foreground h-4 w-4" />
-                    )}
-                  </Button>
                 </div>
               </div>
               {formState?.error && <FormError message={formState.error} />}
@@ -108,24 +107,24 @@ export function SignInForm() {
                 <FormSuccess message={formState.success} />
               )}
               <Button type="submit" disabled={isPending}>
-                {isPending ? "Entrando..." : "Entrar"}
+                {isPending ? "Criando conta..." : "Criar conta"}
               </Button>
               <div className="-mb-3 flex items-center justify-center overflow-hidden">
-                <div className="bg-muted-foreground my-4 h-[1px] flex-1" />
+                <Separator className="bg-muted-foreground my-4" />
                 <span className="px-2 text-sm text-nowrap">
-                  Ou continue com
+                  Or continue with
                 </span>
-                <div className="bg-muted-foreground my-4 h-[1px] flex-1" />
+                <Separator className="bg-muted-foreground my-4" />
               </div>
               <Social isPending={isPending} />
             </div>
             <div className="mt-5 text-center text-sm">
-              Não tem uma conta?{" "}
+              Already have an account?{" "}
               <Link
-                href="/auth/sign-up"
+                href="/auth/sign-in"
                 className="text-lime-500 underline underline-offset-4"
               >
-                Criar conta
+                Sign in
               </Link>
             </div>
           </form>
