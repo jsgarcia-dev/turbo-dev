@@ -5,12 +5,12 @@ import {
   HttpException,
   HttpStatus,
   Logger,
-} from "@nestjs/common";
-import { HttpAdapterHost } from "@nestjs/core";
+} from '@nestjs/common';
+import { HttpAdapterHost } from '@nestjs/core';
 
 @Catch()
 export class AllExceptionsFilter implements ExceptionFilter {
-  private readonly logger = new Logger("ExceptionsHandler");
+  private readonly logger = new Logger('ExceptionsHandler');
 
   constructor(private readonly httpAdapterHost: HttpAdapterHost) {}
 
@@ -32,12 +32,12 @@ export class AllExceptionsFilter implements ExceptionFilter {
       message:
         exception instanceof HttpException
           ? exception.message
-          : "Internal server error",
+          : 'Internal server error',
       body: request.body,
       params: request.params,
       query: request.query,
       stack:
-        process.env.NODE_ENV === "development"
+        process.env.NODE_ENV === 'development'
           ? exception instanceof Error
             ? exception.stack
             : null

@@ -1,17 +1,17 @@
-import { Module } from "@nestjs/common";
-import { ConfigModule } from "@nestjs/config";
-import { ThrottlerModule } from "@nestjs/throttler";
-import { WinstonModule } from "nest-winston";
-import { loggerConfig } from "./config/logger.config";
-import { UsersModule } from "./modules/users/users.module";
-import { validateEnv } from "./config/env.config";
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { ThrottlerModule } from '@nestjs/throttler';
+import { WinstonModule } from 'nest-winston';
+import { loggerConfig } from './config/logger.config';
+import { UsersModule } from './modules/users/users.module';
+import { validateEnv } from './config/env.config';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
       validate: validateEnv,
-      envFilePath: [".env", ".env.development.local"],
+      envFilePath: ['.env', '.env.development.local'],
     }),
     ThrottlerModule.forRoot([
       {
