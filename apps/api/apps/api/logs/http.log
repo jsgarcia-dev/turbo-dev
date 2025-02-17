@@ -1,0 +1,42 @@
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-16T12:22:28.532Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-16T12:22:28.547Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-16T12:22:28.548Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-16T12:22:28.549Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-16T12:22:28.550Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-16T12:22:28.550Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-16T12:22:28.551Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-16T12:22:28.957Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-16T12:22:28.961Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-16T12:22:28.965Z"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T13:13:22.630Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T13:13:22.631Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"244ms","statusCode":200,"timestamp":"2025-02-16T13:13:22.875Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T13:13:37.630Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T13:13:37.630Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"55ms","statusCode":200,"timestamp":"2025-02-16T13:13:37.685Z","url":"/api/users","userAgent":"node"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-16T13:13:52.944Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-16T13:13:52.945Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"71ms","statusCode":200,"timestamp":"2025-02-16T13:13:53.016Z","url":"/api/users","userAgent":"node"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-17T00:31:08.187Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-17T00:31:08.228Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-17T00:31:08.231Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-17T00:31:08.232Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-17T00:31:08.233Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-17T00:31:08.234Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-17T00:31:08.236Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-17T00:31:09.340Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-17T00:31:09.346Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-17T00:31:09.351Z"}
+{"context":"UsersController","level":"info","message":"Requisição para listar todos os usuários","timestamp":"2025-02-17T00:31:16.032Z"}
+{"context":"UsersService","level":"info","message":"Buscando todos os usuários","timestamp":"2025-02-17T00:31:16.033Z"}
+{"context":"HTTP","ip":"::ffff:127.0.0.1","level":"info","method":"GET","responseTime":"415ms","statusCode":200,"timestamp":"2025-02-17T00:31:16.447Z","url":"/api/users","userAgent":"node"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-17T00:31:50.905Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-17T00:31:50.922Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-17T00:31:50.923Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-17T00:31:50.924Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-17T00:31:50.924Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-17T00:31:50.924Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-17T00:31:50.925Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-17T00:31:51.152Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-17T00:31:51.155Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-17T00:31:51.159Z"}

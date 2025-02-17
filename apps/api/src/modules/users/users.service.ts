@@ -20,7 +20,7 @@ export class UsersService {
         },
       });
 
-      return users;
+      return users as User[];
     } catch (error) {
       this.logger.error("Erro ao buscar usuários:", error.message);
       throw error;
