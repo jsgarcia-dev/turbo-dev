@@ -1,5 +1,5 @@
-import { Injectable, Logger } from "@nestjs/common";
-import { prisma, User } from "@repo/database";
+import { Injectable, Logger } from '@nestjs/common';
+import { prisma, User } from '@repo/database';
 
 @Injectable()
 export class UsersService {
@@ -7,7 +7,7 @@ export class UsersService {
 
   async findAll(): Promise<User[]> {
     try {
-      this.logger.log("Buscando todos os usuários");
+      this.logger.log('Buscando todos os usuários');
       const users = await prisma.user.findMany({
         select: {
           id: true,
@@ -22,7 +22,7 @@ export class UsersService {
 
       return users as User[];
     } catch (error) {
-      this.logger.error("Erro ao buscar usuários:", error.message);
+      this.logger.error('Erro ao buscar usuários:', error.message);
       throw error;
     }
   }

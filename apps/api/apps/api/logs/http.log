@@ -40,3 +40,13 @@
 {"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-17T00:31:51.152Z"}
 {"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-17T00:31:51.155Z"}
 {"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-17T00:31:51.159Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-02-17T00:35:48.084Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-02-17T00:35:48.100Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2025-02-17T00:35:48.100Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-02-17T00:35:48.101Z"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized","timestamp":"2025-02-17T00:35:48.102Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2025-02-17T00:35:48.102Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-02-17T00:35:48.102Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2025-02-17T00:35:48.344Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2025-02-17T00:35:48.348Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-02-17T00:35:48.351Z"}
