@@ -26,6 +26,20 @@ import { SigninAuth } from "@/app/_actions/auth/signin-actions";
 import MyLogo from "../icons/my-logo";
 import { Social } from "./social";
 
+const hasError = (
+  errors: Record<string, string[]> | undefined,
+  field: string,
+): boolean => {
+  return Boolean(errors && field in errors && errors[field]?.length > 0);
+};
+
+const getErrorMessage = (
+  errors: Record<string, string[]> | undefined,
+  field: string,
+): string | undefined => {
+  return errors?.[field]?.[0];
+};
+
 export function SignInForm() {
   const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
@@ -37,7 +51,6 @@ export function SignInForm() {
         router.push(formState.redirect!);
         router.refresh();
       }, 1000);
-
       return () => clearTimeout(timer);
     }
   }, [formState, router]);
@@ -63,15 +76,19 @@ export function SignInForm() {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="m@example.com"
+                    placeholder="exemplo@email.com"
                     className={cn("pl-10", {
-                      "border-destructive": formState?.error?.includes("email"),
+                      "border-destructive focus:ring-destructive": hasError(
+                        formState?.errors,
+                        "email",
+                      ),
                     })}
+                    defaultValue={formState?.values?.email}
                   />
                 </div>
-                {formState?.error?.includes("email") && (
-                  <p className="text-xs text-[#f31260]">
-                    O campo email é obrigatório (email)
+                {getErrorMessage(formState?.errors, "email") && (
+                  <p className="text-destructive text-xs">
+                    {getErrorMessage(formState?.errors, "email")}
                   </p>
                 )}
               </div>
@@ -92,11 +109,14 @@ export function SignInForm() {
                     id="password"
                     name="password"
                     type={showPassword ? "text" : "password"}
+                    placeholder="••••••••"
                     className={cn("pl-10", {
-                      "border-destructive":
-                        formState?.error?.includes("password"),
+                      "border-destructive focus:ring-destructive": hasError(
+                        formState?.errors,
+                        "password",
+                      ),
                     })}
-                    placeholder="********"
+                    defaultValue={formState?.values?.password}
                   />
                   <Button
                     type="button"
@@ -111,12 +131,18 @@ export function SignInForm() {
                     )}
                   </Button>
                 </div>
-                {formState?.error?.includes("password") && (
-                  <p className="text-xs text-[#f31260]">
-                    O campo senha é obrigatório (password)
+                {getErrorMessage(formState?.errors, "password") && (
+                  <p className="text-destructive text-xs">
+                    {getErrorMessage(formState?.errors, "password")}
                   </p>
                 )}
               </div>
+
+              {getErrorMessage(formState?.errors, "general") && (
+                <p className="text-destructive text-center text-sm">
+                  {getErrorMessage(formState?.errors, "general")}
+                </p>
+              )}
 
               <Button type="submit" className="w-full" disabled={isPending}>
                 {isPending ? "Entrando..." : "Entrar"}

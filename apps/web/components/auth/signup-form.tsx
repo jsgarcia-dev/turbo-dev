@@ -24,9 +24,21 @@ import { cn } from "@/lib/utils";
 import { SignupAuth } from "@/app/_actions/auth/signup-actions";
 
 import MyLogo from "../icons/my-logo";
-import FormError from "./form-error";
-import FormSuccess from "./form-success";
 import { Social } from "./social";
+
+const hasError = (
+  errors: Record<string, string[]> | undefined,
+  field: string,
+): boolean => {
+  return Boolean(errors && field in errors && errors[field]?.length > 0);
+};
+
+const getErrorMessage = (
+  errors: Record<string, string[]> | undefined,
+  field: string,
+): string | undefined => {
+  return errors?.[field]?.[0];
+};
 
 export function SignUpForm({
   className,
@@ -60,7 +72,7 @@ export function SignUpForm({
           <form action={formAction}>
             <div className="mt-4 flex flex-col gap-6">
               <div className="grid gap-2">
-                <Label htmlFor="name">Name</Label>
+                <Label htmlFor="name">Nome</Label>
                 <div className="relative">
                   <User className="text-muted-foreground absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
                   <Input
@@ -68,10 +80,20 @@ export function SignUpForm({
                     name="name"
                     type="text"
                     placeholder="John Doe"
-                    required
-                    className="pl-10"
+                    className={cn("pl-10", {
+                      "border-destructive focus:ring-destructive": hasError(
+                        formState?.errors,
+                        "name",
+                      ),
+                    })}
+                    defaultValue={formState?.values?.name}
                   />
                 </div>
+                {getErrorMessage(formState?.errors, "name") && (
+                  <p className="text-destructive text-xs">
+                    {getErrorMessage(formState?.errors, "name")}
+                  </p>
+                )}
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="email">Email</Label>
@@ -81,31 +103,52 @@ export function SignUpForm({
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="m@example.com"
-                    required
-                    className="pl-10"
+                    placeholder="exemplo@email.com"
+                    className={cn("pl-10", {
+                      "border-destructive focus:ring-destructive": hasError(
+                        formState?.errors,
+                        "email",
+                      ),
+                    })}
+                    defaultValue={formState?.values?.email}
                   />
                 </div>
+                {getErrorMessage(formState?.errors, "email") && (
+                  <p className="text-destructive text-xs">
+                    {getErrorMessage(formState?.errors, "email")}
+                  </p>
+                )}
               </div>
               <div className="grid gap-2">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password">Senha</Label>
                 <div className="relative">
                   <Lock className="text-muted-foreground absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
                   <Input
                     id="password"
                     name="password"
                     type="password"
-                    required
-                    className="pl-10"
-                    placeholder="********"
+                    placeholder="••••••••"
+                    className={cn("pl-10", {
+                      "border-destructive focus:ring-destructive": hasError(
+                        formState?.errors,
+                        "password",
+                      ),
+                    })}
+                    defaultValue={formState?.values?.password}
                   />
                 </div>
+                {getErrorMessage(formState?.errors, "password") && (
+                  <p className="text-destructive text-xs">
+                    {getErrorMessage(formState?.errors, "password")}
+                  </p>
+                )}
               </div>
-              {formState?.error && <FormError message={formState.error} />}
-              {formState?.success && (
-                <FormSuccess message={formState.success} />
+              {getErrorMessage(formState?.errors, "general") && (
+                <p className="text-destructive text-center text-sm">
+                  {getErrorMessage(formState?.errors, "general")}
+                </p>
               )}
-              <Button type="submit" disabled={isPending}>
+              <Button type="submit" className="w-full" disabled={isPending}>
                 {isPending ? "Criando conta..." : "Criar conta"}
               </Button>
               <div className="-mb-3 flex items-center justify-center overflow-hidden">
@@ -116,15 +159,15 @@ export function SignUpForm({
                 <div className="bg-muted-foreground/20 my-4 h-[1px] flex-1" />
               </div>
               <Social isPending={isPending} />
-            </div>
-            <div className="mt-5 text-center text-sm">
-              Já tem uma conta?
-              <Link
-                href="/auth/sign-in"
-                className="ml-1 underline underline-offset-4"
-              >
-                Entrar
-              </Link>
+              <div className="mt-5 text-center text-sm">
+                Já tem uma conta?{" "}
+                <Link
+                  href="/auth/sign-in"
+                  className="underline underline-offset-4"
+                >
+                  Entrar
+                </Link>
+              </div>
             </div>
           </form>
         </CardContent>

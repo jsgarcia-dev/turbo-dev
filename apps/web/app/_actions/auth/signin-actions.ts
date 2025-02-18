@@ -4,14 +4,26 @@ import { auth } from "@/lib/auth";
 
 import { loginSchema } from "@/schemas/index";
 
-type SigninState = {
-  error?: string;
-  success?: string;
-  redirect?: string;
+type FormErrors =
+  | {
+      email?: string[];
+      password?: string[];
+      general?: string[];
+    }
+  | {
+      email?: never;
+      password?: never;
+      general: string[];
+    };
+
+export type SigninState = {
+  errors?: FormErrors;
   values?: {
     email?: string;
     password?: string;
   };
+  success?: boolean;
+  redirect?: string;
 } | null;
 
 export async function SigninAuth(prevState: SigninState, formData: FormData) {
@@ -23,9 +35,8 @@ export async function SigninAuth(prevState: SigninState, formData: FormData) {
   const validatedFields = loginSchema.safeParse(values);
 
   if (!validatedFields.success) {
-    const fieldError = validatedFields.error.errors[0];
     return {
-      error: `${fieldError.message} (${fieldError.path[0]})`,
+      errors: validatedFields.error.flatten().fieldErrors,
       values,
     };
   }
@@ -36,12 +47,14 @@ export async function SigninAuth(prevState: SigninState, formData: FormData) {
     });
 
     return {
-      success: "Login realizado com sucesso!",
+      success: true,
       redirect: "/",
     };
   } catch {
     return {
-      error: "Credenciais inválidas",
+      errors: {
+        general: ["Credenciais inválidas ou conta não verificada"],
+      },
       values,
     };
   }
