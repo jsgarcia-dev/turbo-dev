@@ -1,28 +1,19 @@
-import { headers } from "next/headers";
-
 import { LogoutButton } from "@/components/auth/logout-button";
 
-import { auth } from "@/lib/auth";
+import { getAuthToken, getCurrentUser } from "@/lib/auth-utils";
 
 export default async function Home() {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
-
-  const token = await auth.api.getToken({
-    headers: await headers(),
-  });
-
-  if (!session && !token) {
-    return null;
-  }
+  const user = await getCurrentUser();
+  const token = await getAuthToken();
 
   return (
     <div>
-      <h2>Session:</h2>
-      <pre>{JSON.stringify(session, null, 2)}</pre>
-      <h2>Token:</h2>
-      <pre>{JSON.stringify(token, null, 2)}</pre>
+      <h2>Usuário Atual:</h2>
+      <pre>{JSON.stringify(user, null, 2)}</pre>
+
+      <h2>Token JWT:</h2>
+      <pre className="break-all">{token}</pre>
+
       <div className="mt-4">
         <LogoutButton />
       </div>

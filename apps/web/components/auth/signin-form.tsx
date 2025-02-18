@@ -19,11 +19,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
+import { cn } from "@/lib/utils";
+
 import { SigninAuth } from "@/app/_actions/auth/signin-actions";
 
 import MyLogo from "../icons/my-logo";
-import FormError from "./form-error";
-import FormSuccess from "./form-success";
 import { Social } from "./social";
 
 export function SignInForm() {
@@ -64,11 +64,18 @@ export function SignInForm() {
                     name="email"
                     type="email"
                     placeholder="m@example.com"
-                    required
-                    className="pl-10"
+                    className={cn("pl-10", {
+                      "border-destructive": formState?.error?.includes("email"),
+                    })}
                   />
                 </div>
+                {formState?.error?.includes("email") && (
+                  <p className="text-xs text-[#f31260]">
+                    O campo email é obrigatório (email)
+                  </p>
+                )}
               </div>
+
               <div className="grid gap-2">
                 <div className="flex items-center justify-between">
                   <Label htmlFor="password">Senha</Label>
@@ -85,8 +92,10 @@ export function SignInForm() {
                     id="password"
                     name="password"
                     type={showPassword ? "text" : "password"}
-                    required
-                    className="pl-10"
+                    className={cn("pl-10", {
+                      "border-destructive":
+                        formState?.error?.includes("password"),
+                    })}
                     placeholder="********"
                   />
                   <Button
@@ -102,14 +111,17 @@ export function SignInForm() {
                     )}
                   </Button>
                 </div>
+                {formState?.error?.includes("password") && (
+                  <p className="text-xs text-[#f31260]">
+                    O campo senha é obrigatório (password)
+                  </p>
+                )}
               </div>
-              {formState?.error && <FormError message={formState.error} />}
-              {formState?.success && (
-                <FormSuccess message={formState.success} />
-              )}
-              <Button type="submit" disabled={isPending}>
+
+              <Button type="submit" className="w-full" disabled={isPending}>
                 {isPending ? "Entrando..." : "Entrar"}
               </Button>
+
               <div className="-mb-3 flex items-center justify-center overflow-hidden">
                 <div className="bg-muted-foreground my-4 h-[1px] flex-1" />
                 <span className="px-2 text-sm text-nowrap">
@@ -117,16 +129,18 @@ export function SignInForm() {
                 </span>
                 <div className="bg-muted-foreground my-4 h-[1px] flex-1" />
               </div>
+
               <Social isPending={isPending} />
-            </div>
-            <div className="mt-5 text-center text-sm">
-              Não tem uma conta?{" "}
-              <Link
-                href="/auth/sign-up"
-                className="text-lime-500 underline underline-offset-4"
-              >
-                Criar conta
-              </Link>
+
+              <div className="mt-5 text-center text-sm">
+                Não tem uma conta?{" "}
+                <Link
+                  href="/auth/sign-up"
+                  className="text-lime-500 underline underline-offset-4"
+                >
+                  Criar conta
+                </Link>
+              </div>
             </div>
           </form>
         </CardContent>
