@@ -24,7 +24,6 @@ import { cn } from "@/lib/utils";
 import { SignupAuth } from "@/app/_actions/auth/signup-actions";
 
 import MyLogo from "../icons/my-logo";
-import { Separator } from "../ui/separator";
 import FormError from "./form-error";
 import FormSuccess from "./form-success";
 import { Social } from "./social";
@@ -52,9 +51,9 @@ export function SignUpForm({
       <Card className="w-[450px]">
         <CardHeader className="items-center justify-center">
           <MyLogo className="h-12 w-12" />
-          <CardTitle className="text-2xl">Create an Account</CardTitle>
+          <CardTitle className="text-2xl">Crie uma conta</CardTitle>
           <CardDescription>
-            Enter your details below to create your account
+            Digite seus dados abaixo para criar sua conta
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -110,21 +109,21 @@ export function SignUpForm({
                 {isPending ? "Criando conta..." : "Criar conta"}
               </Button>
               <div className="-mb-3 flex items-center justify-center overflow-hidden">
-                <Separator className="bg-muted-foreground my-4" />
-                <span className="px-2 text-sm text-nowrap">
-                  Or continue with
+                <div className="bg-muted-foreground/20 my-4 h-[1px] flex-1" />
+                <span className="text-muted-foreground px-2 text-sm text-nowrap">
+                  Ou continue com
                 </span>
-                <Separator className="bg-muted-foreground my-4" />
+                <div className="bg-muted-foreground/20 my-4 h-[1px] flex-1" />
               </div>
               <Social isPending={isPending} />
             </div>
             <div className="mt-5 text-center text-sm">
-              Already have an account?{" "}
+              Já tem uma conta?
               <Link
                 href="/auth/sign-in"
-                className="text-lime-500 underline underline-offset-4"
+                className="ml-1 underline underline-offset-4"
               >
-                Sign in
+                Entrar
               </Link>
             </div>
           </form>

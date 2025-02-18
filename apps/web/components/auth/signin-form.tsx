@@ -123,11 +123,11 @@ export function SignInForm() {
               </Button>
 
               <div className="-mb-3 flex items-center justify-center overflow-hidden">
-                <div className="bg-muted-foreground my-4 h-[1px] flex-1" />
-                <span className="px-2 text-sm text-nowrap">
+                <div className="bg-muted-foreground/20 my-4 h-[1px] flex-1" />
+                <span className="text-muted-foreground px-2 text-sm text-nowrap">
                   Ou continue com
                 </span>
-                <div className="bg-muted-foreground my-4 h-[1px] flex-1" />
+                <div className="bg-muted-foreground/20 my-4 h-[1px] flex-1" />
               </div>
 
               <Social isPending={isPending} />
@@ -136,7 +136,7 @@ export function SignInForm() {
                 Não tem uma conta?{" "}
                 <Link
                   href="/auth/sign-up"
-                  className="text-lime-500 underline underline-offset-4"
+                  className="underline underline-offset-4"
                 >
                   Criar conta
                 </Link>
