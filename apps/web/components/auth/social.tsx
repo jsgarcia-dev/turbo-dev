@@ -21,6 +21,7 @@ export function Social({ isPending }: SocialProps) {
         disabled={isPending}
       >
         <GoogleIcon className="h-5 w-5" />
+        <span className="text-sm text-gray-800"> Sign In With Google</span>
       </Button>
     </div>
   );
